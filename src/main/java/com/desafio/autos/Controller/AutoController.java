@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/autos")
-@CrossOrigin("http://localhost:8080/")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class AutoController {
 
 

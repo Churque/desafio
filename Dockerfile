@@ -1,10 +1,9 @@
-
 FROM openjdk:17-slim
 
-
+COPY target/autos-0.0.1-SNAPSHOT.jar autos.jar
 
 VOLUME /tmp
 
-EXPOSE 8080
+EXPOSE 3001
 
-CMD ["java","-jar","target/autos-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar","autos.jar"]
